@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <net.skyscanner.backpack.card.BpkCardView-->
+    <!--        android:id="@+id/bpkCardView3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        app:cardCornerRadius="10dp"-->
+    <!--        app:cardElevation="80dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/view"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view">-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:text="Flight Number"-->
+    <!--                android:textSize="80dp" />-->
+
+    <!--        </RelativeLayout>-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:text="Flight Number"-->
+    <!--                android:textSize="80dp" />-->
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </net.skyscanner.backpack.card.BpkCardView>-->
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1008dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Flight Information"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <!--    <net.skyscanner.backpack.text.BpkText-->
+    <!--        android:id="@+id/bpkText2"-->
+    <!--        style="@style/bpkTextHeading1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:text="Flight Information"-->
+    <!--        android:textSize="60sp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view"-->
+    <!--        tools:layout_editor_absoluteX="16dp" />-->
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/flight_info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        app:cardStatusType="success"
+        app:cardTitle="Flight Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/airline_arrivals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arrival"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/airline_arrival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D78 D23 D67"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/arrival_time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: Monday, Feb 22, 2023 at 3:00 PM"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+    <net.skyscanner.backpack.text.BpkText
+        android:id="@+id/flight_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flight Number "
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <net.skyscanner.backpack.text.BpkText
+        android:id="@+id/flight_number_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AC1234"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/flight_number"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <net.skyscanner.backpack.text.BpkText
+        android:id="@+id/airline_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Departure"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/flight_number_text_view"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <net.skyscanner.backpack.text.BpkText
+        android:id="@+id/airline_departure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="D12 D23 D45"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/airline_text_view"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <net.skyscanner.backpack.text.BpkText
+        android:id="@+id/departure_time_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: Monday, Feb 22, 2023 at 8:00 AM"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/airline_departure"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
